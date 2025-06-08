@@ -1,0 +1,107 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #09912b;
+    text-align: left;
+}
+
+ /* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 0px; /* Some padding */
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 75%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+  
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color:lightgray;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #0a0a0a;
+}
+
+.column {
+  float: left;
+  width: 23%;
+  padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+div.ex1 {
+  border: 1px solid gray;
+  margin: 1px;
+  width:30%;
+  padding:5px;
+  background-color:  #CCCCFF;
+  margin-left:10px;
+  margin-right:120px;
+}
+
+div.ex2 {
+  border: 1px solid gray;
+  margin: 1px;
+  width:30%;
+  padding:5px;
+  background-color:  #FFA07A;
+  margin-left:10px;
+  margin-right:120px;
+}
+
+div.fixedAtBottomRight {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  border: 3px solid #73AD21;
+}
