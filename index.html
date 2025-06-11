@@ -37,18 +37,108 @@
             margin: 20px 0;
             border-radius: 5px;
         }
+		
+		.column {
+			 float: left;
+			 width: 23%;
+			 padding: 2px;
+		}
+		
+		/* Clear floats after image containers */
+		.row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+		}
+
+		.imgcontainer {
+		     position: relative;
+		}
+
+		.imgcontainer .imgcontent {
+			  position: absolute; /* Position the background text */
+			  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+			  background: rgb(0, 0, 0); /* Fallback color */
+			  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+			  color: #f1f1f1; /* Grey text */
+			  width: 100%; /* Full width */
+			  padding: 0px; /* Some padding */
+		}
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to the Android Device Page</h1>
     </header>
-    <div class="container">
-        <div class="content">
-            <h2>Latest Android Devices</h2>
-            <p>Explore the latest features and specifications of the newest Android devices available in the market.</p>
-        </div>
-    </div>
+	
+<div class="container">
+<div class="content">
+    <h2>Latest Android Devices</h2>
+    <p>Explore the latest features and specifications of the newest Android devices available in the market.</p>
+
+<div class="row">        
+	<div class="column">
+		<div class="imgcontainer">
+		  <img src="./images/organic_chem.jpg" alt="Notebook" style="width:100%;">
+		  <div class="imgcontent">
+			 <h2>Organic Chemistry</h2>
+		  </div>
+		</div> 
+	</div>
+	
+	<div class="column">
+		<div class="imgcontainer">
+		  <img src="./images/acids_bases.jpg" alt="Notebook" style="width:100%;">
+		  <div class="imgcontent">
+			 <h2>Acids and Bases</h2>
+		  </div>
+		</div> 
+	</div>
+	
+	<div class="column">
+		<div class="imgcontainer">
+		  <img src="./images/rxnrates.jpg" alt="Notebook" style="width:100%;">
+		  <div class="imgcontent">
+			 <h2>Rates of Reactions</h2>
+		  </div>
+		</div> 
+	</div>
+</div>
+
+<div class="row">        
+	<div class="column">
+		<div class="imgcontainer">
+		  <img src="./images/lechatelier.jpg" alt="Notebook" style="width:100%;">
+		  <div class="imgcontent">
+			 <h2>Le Chatelier</h2>
+		  </div>
+		</div> 
+	</div>
+	
+	<div class="column">
+		<div class="imgcontainer">
+		  <img src="./images/chemequilibrium.jpg" alt="Notebook" style="width:100%;">
+		  <div class="imgcontent">
+			 <h2>Chem Equilibrium</h2>
+		  </div>
+		</div> 
+	</div>
+	
+	<div class="column">
+		<div class="imgcontainer">
+		  <img src="./images/electrolysis.jpg" alt="Notebook" style="width:100%;">
+		  <div class="imgcontent">
+			 <h2>Electrochemistry</h2>
+		  </div>
+		</div> 
+	</div>
+</div>
+
+
+
+</div>
+</div>
+	
     <footer>
         <p>&copy; 2023 Android Devices. All rights reserved.</p>
     </footer>
