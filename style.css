@@ -24,6 +24,22 @@ h1 {
             overflow: hidden;
 }
 
+footer {
+            background: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+}
+
+.content {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+}
 
 /* Bottom right text */
 .text-block {
